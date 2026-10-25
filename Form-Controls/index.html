@@ -13,30 +13,30 @@
     </header>
     <main>
       <form>
-          <div>
+          <fieldset>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Jane Doe" minlength="2" required> 
-          </div>  
+          </fieldset>  
 
-          <div>
+          <fieldset>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-          </div>
+          </fieldset>
 
-          <div>
+          <fieldset>
             <legend>What colour should this t-shirt be?</legend>
               <div>
-                <input type="radio" id="black" name="color" value="black" required>
                 <label for="black">Black</label>
-                <input type="radio" id="white" name="color" value="white" required>
+                <input type="radio" id="black" name="color" value="black" required>
                 <label for="white">White</label>
-                <input type="radio" id="pink" name="color" value="pink" required>
+                <input type="radio" id="white" name="color" value="white" required>
                 <label for="pink">Pink</label>
+                <input type="radio" id="pink" name="color" value="pink" required>
               </div>  
-          </div>
+          </fieldset>
 
-        <div>
-          <legend>What size does the customer want?</legend>
+        <fieldset>
+          <label for="size">What size does the customer want?</label>
             <select id="size" name="size" required>
               <option value="xs">XS</option>
               <option value="s">S</option>
@@ -45,7 +45,7 @@
               <option value="xl">XL</option>
               <option value="xxl">XXL</option>
             </select>           
-        </div>
+        </fieldset>
         
         <button>Submit</button>  
       </form>
