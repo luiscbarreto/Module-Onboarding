@@ -40,13 +40,11 @@ header {
 }
 
 a {
-  display: inline-block;
   padding: 8px 16px;
   border: 1px solid #000000;
   max-width: fit-content;
   text-decoration: none;
   font-weight: bold;
-  background: transparent;
   color: black;
 }
 
