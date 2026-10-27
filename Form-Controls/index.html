@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="T-shirt store web page where users can easily select their custom size and color. 
+    Fill out the form and place your order." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +14,45 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" minlength="2" required> 
+          </fieldset>  
+
+          <fieldset>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>What colour should this t-shirt be?</legend>
+              <div>
+                <label for="black">Black</label>
+                <input type="radio" id="black" name="color" value="black" required>
+                <label for="white">White</label>
+                <input type="radio" id="white" name="color" value="white" required>
+                <label for="pink">Pink</label>
+                <input type="radio" id="pink" name="color" value="pink" required>
+              </div>  
+          </fieldset>
+
+        <fieldset>
+          <label for="size">What size does the customer want?</label>
+            <select id="size" name="size" required>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>           
+        </fieldset>
+        
+        <button>Submit</button>  
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By LUIS BARRETO</h2>
     </footer>
   </body>
 </html>
